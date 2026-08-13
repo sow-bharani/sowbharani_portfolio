@@ -11,6 +11,7 @@ function Footer() {
 
         <div className="footer-links">
           <h3>Quick Links</h3>
+
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
@@ -32,7 +33,9 @@ function Footer() {
           </a>
 
           <a
-            href="#"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noreferrer"
             className="social-item linkedin"
           >
             <FaLinkedin /> LinkedIn

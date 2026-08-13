@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css/contact.css";
 import { motion } from "framer-motion";
 import {
@@ -6,56 +6,9 @@ import {
   FaPhoneAlt,
   FaWhatsapp,
   FaGithub,
-  FaLinkedin,
 } from "react-icons/fa";
-import axios from "axios";
-
-
-
 
 function Contact() {
-
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-const handleSubmit = async (e) => {
-
-  e.preventDefault();
-
-  try {
-
-    const response = await axios.post(
-      "https://portfolio-backend-y883.onrender.com/api/contact/",
-      formData
-    );
-
-    alert(response.data.message);
-
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
-
-  } catch (error) {
-
-    console.log(error.response);
-
-    alert("Error submitting form");
-
-  }
-
-};
   return (
     <div className="contact-container">
 
@@ -78,11 +31,9 @@ const handleSubmit = async (e) => {
         Feel free to reach out through any platform below
       </motion.p>
 
-      {/* MAIN CONTENT */}
+      {/* CONTACT CARDS */}
       <div className="contact-wrapper">
 
-
-        {/* RIGHT - CONTACT CARDS */}
         <div className="contact-grid">
 
           {/* EMAIL */}
@@ -149,7 +100,6 @@ const handleSubmit = async (e) => {
             <p>View my projects</p>
           </motion.a>
 
-         
         </div>
 
       </div>
