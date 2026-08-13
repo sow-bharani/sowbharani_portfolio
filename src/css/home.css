@@ -31,7 +31,7 @@ body {
 
 .profile-img:hover {
   transform: scale(1.08) translateY(-5px);
-  box-shadow: 0 25px 70px rgba(4, 48, 130, 0.3);
+  box-shadow: 0 25px 70px rgba(185, 92, 92, 0.3);
 }
 
 .home-right {
@@ -55,7 +55,13 @@ body {
   font-weight: 800;
   margin-bottom: 10px;
 
-  background: linear-gradient(10deg, #306998, #ffd43b);
+  background: linear-gradient(
+    90deg,
+    #B85C5C,
+    #C97864,
+    #E8A58F
+  );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -99,19 +105,31 @@ body {
   transition:
     transform 0.3s ease,
     background 0.3s ease,
-    box-shadow 0.3s ease;
+    box-shadow 0.3s ease,
+    color 0.3s ease;
 }
 
 .view_project {
-  background: var(--gold);
+  background: var(--primary-blue);
   color: #ffffff;
 }
 
 .view_project:hover {
-  background: linear-gradient(100deg, var(--primary-blue), #ffd43b);
+  background: linear-gradient(
+    100deg,
+    #B85C5C,
+    #E8A58F
+  );
+
   transform: translateY(-4px);
+
   box-shadow: 0 10px 25px var(--shadow);
 }
+
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 768px) {
 
@@ -172,6 +190,11 @@ body {
   }
 
 }
+
+
+/* =========================
+   TABLET
+========================= */
 
 @media (min-width: 769px) and (max-width: 1024px) {
 

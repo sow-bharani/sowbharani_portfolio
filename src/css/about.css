@@ -5,6 +5,11 @@
   background: var(--body-bg);
 }
 
+
+/* =========================
+   SECTIONS
+========================= */
+
 .about-section,
 .skills-section,
 .education-section,
@@ -12,12 +17,22 @@
   margin-bottom: 60px;
 }
 
+
+/* =========================
+   HEADINGS
+========================= */
+
 h2 {
   text-align: center;
   margin-bottom: 25px;
   font-size: 32px;
   color: var(--text-color);
 }
+
+
+/* =========================
+   ABOUT
+========================= */
 
 .about-section {
   text-align: center;
@@ -37,6 +52,11 @@ h2 {
   font-weight: 800;
 }
 
+
+/* =========================
+   SKILLS
+========================= */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -45,22 +65,46 @@ h2 {
 
 .skill-card {
   padding: 14px;
+
   background: var(--card-bg);
+
   color: var(--text-color);
+
   text-align: center;
+
   border-radius: 10px;
 
   transition: all 0.3s ease;
+
   box-shadow: 0 5px 15px var(--shadow);
 
   border: 1px solid var(--border-color);
 }
 
+
+/* Skill Hover */
+
 .skill-card:hover {
   transform: translateY(-5px) scale(1.05);
-  background: linear-gradient(10deg, #306998, #ffd43b);
-  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #B85C5C,
+    #C97864,
+    #E8A58F
+  );
+
+  color: #FFF7E8;
+
+  border-color: #C97864;
+
+  box-shadow: 0 10px 25px var(--shadow);
 }
+
+
+/* =========================
+   EDUCATION
+========================= */
 
 .education-section {
   text-align: center;
@@ -75,22 +119,46 @@ h2 {
 
 .education-card {
   padding: 14px;
+
   background: var(--card-bg);
+
   color: var(--text-color);
+
   text-align: center;
+
   border-radius: 10px;
 
   transition: all 0.3s ease;
+
   box-shadow: 0 5px 15px var(--shadow);
 
   border: 1px solid var(--border-color);
 }
 
+
+/* Education Hover */
+
 .education-card:hover {
   transform: translateY(-5px) scale(1.05);
-  background: linear-gradient(10deg, #306998, #ffd43b);
-  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #B85C5C,
+    #C97864,
+    #E8A58F
+  );
+
+  color: #FFF7E8;
+
+  border-color: #C97864;
+
+  box-shadow: 0 10px 25px var(--shadow);
 }
+
+
+/* =========================
+   WHY WORK WITH ME
+========================= */
 
 .why-grid {
   display: grid;
@@ -100,22 +168,44 @@ h2 {
 
 .why-card {
   padding: 20px;
+
   border-radius: 12px;
+
   background: var(--card-bg);
 
   color: var(--text-color);
 
   transition: all 0.3s ease;
+
   box-shadow: 0 5px 20px var(--shadow);
 
   border: 1px solid var(--border-color);
 }
 
+
+/* Why Card Hover */
+
 .why-card:hover {
   transform: translateY(-6px);
-  background: linear-gradient(10deg, #306998, #ffd43b);
-  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #B85C5C,
+    #C97864,
+    #E8A58F
+  );
+
+  color: #FFF7E8;
+
+  border-color: #C97864;
+
+  box-shadow: 0 10px 25px var(--shadow);
 }
+
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 768px) {
 
@@ -138,6 +228,7 @@ h2 {
 
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .why-grid {
@@ -154,6 +245,11 @@ h2 {
   }
 
 }
+
+
+/* =========================
+   TABLET
+========================= */
 
 @media (min-width: 769px) and (max-width: 1024px) {
 

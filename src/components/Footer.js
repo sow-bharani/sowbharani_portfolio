@@ -9,35 +9,44 @@ function Footer() {
 
       <div className="footer-container">
 
-        
         <div className="footer-links">
           <h3>Quick Links</h3>
           <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/projects">Projects</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
-        
         <div className="footer-social">
           <h3>Connect</h3>
 
-          <a href="https://github.com/SURENDAR-DHARMALINGAM" target="_blank" rel="noreferrer" className="social-item github">
+          <a
+            href="https://github.com/sow-bharani"
+            target="_blank"
+            rel="noreferrer"
+            className="social-item github"
+          >
             <FaGithub /> GitHub
           </a>
 
-          <a href="https://www.linkedin.com/in/surea" target="_blank" rel="noreferrer" className="social-item linkedin">
+          <a
+            href="#"
+            className="social-item linkedin"
+          >
             <FaLinkedin /> LinkedIn
           </a>
 
-          <a href="mailto:dharmalingamsure007@gmail.com" className="social-item email">
+          <a
+            href="mailto:sowbharani646@gmail.com"
+            className="social-item email"
+          >
             <FaEnvelope /> Email
           </a>
 
-          
-          <a href="https://wa.me/919943583433"
+          <a
+            href="https://wa.me/918072716591"
             target="_blank"
             rel="noreferrer"
             className="social-item whatsapp"
@@ -49,9 +58,8 @@ function Footer() {
 
       </div>
 
-      
       <div className="footer-bottom">
-        <p>© 2026 Surendar Dharmalingam | All Rights Reserved</p>
+        <p>© 2026 Sowbharani Ganesan | All Rights Reserved</p>
       </div>
 
     </footer>

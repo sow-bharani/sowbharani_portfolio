@@ -16,12 +16,12 @@ function Preloader() {
 
       <div className="typing-container">
         <h2 className="typing-text">
-          Surendar Dharmalingam 
+          Sowbharani Ganesan
         </h2>
       </div>
 
       <p className="loading-text">
-        CODE - CREATE - CONQUER
+        THINK - BUILD - CREATE
       </p>
 
     </div>

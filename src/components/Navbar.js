@@ -18,30 +18,50 @@ function Navbar() {
       transition={{ duration: 0.5 }}
     >
 
-      <h1 className="logo">P O R T F O L I O</h1>
+      {/* Logo */}
+      <h1 className="logo">
+        Sowbharani Ganesan
+      </h1>
 
+
+      {/* Navigation Links */}
       <div className={`nav-links ${menuOpen ? "active" : ""}`}>
 
-        <Link to="/" onClick={() => setMenuOpen(false)}>
+        <Link
+          to="/"
+          onClick={() => setMenuOpen(false)}
+        >
           <h2>Home</h2>
         </Link>
 
-        <Link to="/about" onClick={() => setMenuOpen(false)}>
+        <Link
+          to="/about"
+          onClick={() => setMenuOpen(false)}
+        >
           <h2>About</h2>
         </Link>
 
-        <Link to="/projects" onClick={() => setMenuOpen(false)}>
+        <Link
+          to="/projects"
+          onClick={() => setMenuOpen(false)}
+        >
           <h2>Projects</h2>
         </Link>
 
-        <Link to="/contact" onClick={() => setMenuOpen(false)}>
+        <Link
+          to="/contact"
+          onClick={() => setMenuOpen(false)}
+        >
           <h2>Contact</h2>
         </Link>
 
       </div>
 
+
+      {/* Right Side */}
       <div className="navbar-right">
 
+        {/* Theme Toggle */}
         <button
           className={`theme-toggle ${theme}`}
           onClick={toggleTheme}
@@ -52,6 +72,8 @@ function Navbar() {
           </div>
         </button>
 
+
+        {/* Mobile Menu */}
         <div
           className={`hamburger ${menuOpen ? "active" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}

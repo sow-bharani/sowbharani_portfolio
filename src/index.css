@@ -1,50 +1,60 @@
 :root {
 
-  --body-bg: linear-gradient(80deg, #87c8d0, #B2B5E0);
+  --body-bg: linear-gradient(135deg, #FFF7E8, #E8D8C3);
 
-  --card-bg: #ffffff;
+  --card-bg: #FFFFFF;
 
-  --text-color: #222222;
+  --text-color: #3E3030;
 
-  --secondary-text: #555555;
+  --secondary-text: #6F5E55;
 
-  --navbar-bg: #2C748C;
+  --navbar-bg: #B85C5C;
 
-  --footer-bg: #111111;
+  --footer-bg: #E8A58F;
 
-  --primary-blue: #043082;
+  --primary-blue: #C97864;
 
-  --gold: #b5a33b;
+  --gold: #E8A58F;
 
-  --border-color: #dddddd;
+  --border-color: #E4D4C2;
 
-  --shadow: rgba(0,0,0,0.12);
+  --shadow: rgba(100, 70, 55, 0.16);
 
 }
+
+
+/* =========================
+   DARK THEME
+========================= */
 
 [data-theme="dark"] {
 
-  --body-bg: linear-gradient(135deg, #0F172A, #1E293B);
+  --body-bg: linear-gradient(135deg, #2C2020, #3A2C27);
 
-  --card-bg: #1E293B;
+  --card-bg: #3B302D;
 
-  --text-color: #F8FAFC;
+  --text-color: #FFF7E8;
 
-  --secondary-text: #CBD5E1;
+  --secondary-text: #D8C9BC;
 
-  --navbar-bg: #111827;
+  --navbar-bg: #914B4B;
 
-  --footer-bg: #020617;
+  --footer-bg: #1F1715;
 
-  --primary-blue: #60A5FA;
+  --primary-blue: #D47D67;
 
-  --gold: #D4AF37;
+  --gold: #E8A58F;
 
-  --border-color: #334155;
+  --border-color: #55443D;
 
-  --shadow: rgba(0,0,0,0.45);
+  --shadow: rgba(0, 0, 0, 0.4);
 
 }
+
+
+/* =========================
+   GLOBAL RESET
+========================= */
 
 * {
   margin: 0;
@@ -52,34 +62,57 @@
   box-sizing: border-box;
 
   transition:
-    background-color .35s ease,
-    color .35s ease,
-    border-color .35s ease,
-    box-shadow .35s ease;
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
 }
+
+
+/* =========================
+   BODY
+========================= */
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
   line-height: 1.6;
+
   overflow-x: hidden;
 
   background: var(--body-bg);
+
   color: var(--text-color);
 
   transition:
-    background .4s ease,
-    color .4s ease;
+    background 0.4s ease,
+    color 0.4s ease;
 }
+
+
+/* =========================
+   LINKS
+========================= */
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
+
+/* =========================
+   IMAGES
+========================= */
+
 img {
   max-width: 100%;
   display: block;
 }
+
+
+/* =========================
+   BUTTONS
+========================= */
 
 button {
   font-family: inherit;
@@ -87,15 +120,62 @@ button {
   border: none;
 }
 
+
+/* =========================
+   SECTIONS
+========================= */
+
 section {
   margin-bottom: 40px;
 }
+
+
+/* =========================
+   CONTAINER
+========================= */
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF7E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C97864;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B85C5C;
+}
+
+
+/* =========================
+   TEXT SELECTION
+========================= */
+
+::selection {
+  background: #E8A58F;
+  color: #3E3030;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 768px) {
 
@@ -112,6 +192,11 @@ section {
   }
 
 }
+
+
+/* =========================
+   TABLET
+========================= */
 
 @media (min-width: 769px) and (max-width: 1024px) {
 

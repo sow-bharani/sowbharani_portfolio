@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="about-container">
 
-      
+      {/* About Me */}
       <motion.section
         className="about-section"
         initial={{ opacity: 0, y: 40 }}
@@ -16,26 +16,27 @@ function About() {
         <h2>About Me</h2>
 
         <p>
-          I am a passionate <span>Python Full Stack Developer</span> with hands-on
-          experience in building scalable, secure, and high-performance web applications
-          using <span>Django</span> and <span>React</span>. I specialize in designing
-          efficient backend architectures, developing RESTful APIs, and creating
-          responsive, user-friendly interfaces.
+          I am an <span>AI/ML Engineer</span> with a strong foundation in
+          Data Science and Artificial Intelligence. I enjoy working with
+          Python, SQL, Machine Learning, and data-driven technologies to
+          develop practical and intelligent solutions.
         </p>
 
         <p>
-          My core strengths include backend development, database design,
-          API integration, and full-stack application development. I focus on writing
-          clean, maintainable, and scalable code that follows industry best practices.
+          I have a strong interest in <span>Machine Learning, Data Analysis,
+          Predictive Modeling, and AI</span>. I focus on understanding data,
+          building effective models, and solving real-world problems using
+          technology.
         </p>
 
         <p>
-          I am highly motivated to solve real-world problems, continuously learn new
-          technologies, and contribute to building impactful software solutions.
+          As a fresher, I am looking forward to starting my career in the
+          AI/ML and Data Science field, while continuously improving my
+          technical skills and contributing to meaningful projects.
         </p>
       </motion.section>
 
-      
+      {/* Technical Skills */}
       <motion.section
         className="skills-section"
         initial={{ opacity: 0, y: 40 }}
@@ -46,9 +47,22 @@ function About() {
 
         <div className="skills-grid">
           {[
-            "Python","React.js","Django","Django REST API",
-            "HTML","CSS","JavaScript","Responsive Design",
-            "SQL / SQLite","Mongo DB","Git & GitHub","REST API Integration"
+            "Python",
+            "SQL",
+            "MySQL",
+            "Machine Learning",
+            "Artificial Intelligence",
+            "Data Analysis",
+            "Pandas",
+            "NumPy",
+            "EDA",
+            "Feature Engineering",
+            "Predictive Modeling",
+            "OpenCV",
+            "Git & GitHub",
+            "Jupyter Notebook",
+            "Google Colab",
+            "VS Code"
           ].map((skill, index) => (
             <motion.div
               key={index}
@@ -64,7 +78,7 @@ function About() {
         </div>
       </motion.section>
 
-      
+      {/* Education */}
       <motion.section
         className="education-section"
         initial={{ opacity: 0, y: 40 }}
@@ -79,24 +93,17 @@ function About() {
             className="education-card"
             whileHover={{ scale: 1.05 }}
           >
-            <h3>Master’s Degree</h3>
-            <p>Commerce with computer applications</p>
-            <p>2021 – 2023</p>
-          </motion.div>
-
-          <motion.div
-            className="education-card"
-            whileHover={{ scale: 1.05 }}
-          >
-            <h3>Bachelor’s Degree</h3>
-            <p>Commerce with computer applications</p>
-            <p>2018 – 2021</p>
+            <h3>B.E. Electronics and Communication Engineering</h3>
+            <p>Adithya Institute of Technology</p>
+            <p>Specialization: Data Science and AI</p>
+            <p>2022 – 2026</p>
+            <p>CGPA: 7.5 / 10</p>
           </motion.div>
 
         </div>
       </motion.section>
 
-      
+      {/* Why Work With Me */}
       <motion.section
         className="why-section"
         initial={{ opacity: 0, y: 40 }}
@@ -109,19 +116,19 @@ function About() {
           {[
             {
               title: "Problem Solver",
-              desc: "I build efficient solutions for real-world challenges."
+              desc: "I enjoy solving real-world problems using data, AI, and machine learning."
             },
             {
-              title: "Clean & Scalable Code",
-              desc: "Maintainable, optimized, and production-ready code."
+              title: "Data-Driven Thinking",
+              desc: "I focus on understanding data and finding meaningful insights from it."
             },
             {
-              title: "Full Stack Expertise",
-              desc: "Strong understanding of both frontend and backend systems."
+              title: "AI & ML Skills",
+              desc: "Strong foundation in Python, machine learning, data analysis, and AI concepts."
             },
             {
               title: "Continuous Learning",
-              desc: "Always improving with new tools and technologies."
+              desc: "Always improving my technical knowledge and exploring new AI technologies."
             }
           ].map((item, index) => (
             <motion.div

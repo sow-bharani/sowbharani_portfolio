@@ -81,58 +81,13 @@ const handleSubmit = async (e) => {
       {/* MAIN CONTENT */}
       <div className="contact-wrapper">
 
-        {/* LEFT - CONTACT FORM */}
-        <motion.form
-          className="contact-form"
-          onSubmit={handleSubmit}
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            value={formData.name}
-            onChange={handleChange}
-          />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            value={formData.email}
-            onChange={handleChange}
-          />
-
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="6"
-            required
-            value={formData.message}
-            onChange={handleChange}
-          />
-
-          <motion.button
-            type="submit"
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Send Message
-          </motion.button>
-
-        </motion.form>
 
         {/* RIGHT - CONTACT CARDS */}
         <div className="contact-grid">
 
           {/* EMAIL */}
           <motion.a
-            href="mailto:dharmalingamsure007@gmail.com"
+            href="mailto:sowbharani646@gmail.com"
             className="contact-card"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
@@ -142,12 +97,12 @@ const handleSubmit = async (e) => {
           >
             <FaEnvelope />
             <h3>Email</h3>
-            <p>dharmalingamsure007@gmail.com</p>
+            <p>sowbharani646@gmail.com</p>
           </motion.a>
 
           {/* PHONE */}
           <motion.a
-            href="tel:+919943583433"
+            href="tel:+918072716591"
             className="contact-card"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
@@ -157,12 +112,12 @@ const handleSubmit = async (e) => {
           >
             <FaPhoneAlt />
             <h3>Phone</h3>
-            <p>+91 99435 83433</p>
+            <p>+91 80727 16591</p>
           </motion.a>
 
           {/* WHATSAPP */}
           <motion.a
-            href="https://wa.me/919943583433"
+            href="https://wa.me/918072716591"
             target="_blank"
             rel="noreferrer"
             className="contact-card whatsapp"
@@ -179,7 +134,7 @@ const handleSubmit = async (e) => {
 
           {/* GITHUB */}
           <motion.a
-            href="https://github.com/SURENDAR-DHARMALINGAM"
+            href="https://github.com/sow-bharani"
             target="_blank"
             rel="noreferrer"
             className="contact-card"
@@ -194,23 +149,7 @@ const handleSubmit = async (e) => {
             <p>View my projects</p>
           </motion.a>
 
-          {/* LINKEDIN */}
-          <motion.a
-            href="https://linkedin.com/in/surea"
-            target="_blank"
-            rel="noreferrer"
-            className="contact-card"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.97 }}
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-          >
-            <FaLinkedin />
-            <h3>LinkedIn</h3>
-            <p>Connect professionally</p>
-          </motion.a>
-
+         
         </div>
 
       </div>

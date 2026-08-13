@@ -5,45 +5,77 @@
   background: var(--body-bg);
 }
 
+
+/* =========================
+   CONTACT TITLE
+========================= */
+
 .contact-title {
   text-align: center;
+
   font-size: 40px;
+
   margin-bottom: 10px;
+
   color: var(--text-color);
 }
 
 .contact-subtitle {
   text-align: center;
+
   margin-bottom: 50px;
+
   color: var(--secondary-text);
+
   font-size: 16px;
 }
 
+
+/* =========================
+   CONTACT WRAPPER
+========================= */
+
 .contact-wrapper {
   display: flex;
+
   gap: 40px;
+
   align-items: flex-start;
 }
 
+
+/* =========================
+   CONTACT FORM
+========================= */
+
 .contact-form {
   height: 550px;
+
   flex: 1;
 
   background: var(--card-bg);
 
   padding: 50px 60px;
+
   border-radius: 15px;
 
   box-shadow: 0 10px 30px var(--shadow);
 
   display: flex;
+
   flex-direction: column;
+
   gap: 40px;
 
   transition: 0.3s ease;
 
   border: 1px solid var(--border-color);
 }
+
+
+/* =========================
+   INPUTS
+========================= */
 
 .contact-form input,
 .contact-form textarea {
@@ -71,11 +103,20 @@
   color: var(--secondary-text);
 }
 
+
+/* Input Focus */
+
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--primary-blue);
-  box-shadow: 0 0 10px rgba(4, 48, 130, 0.15);
+
+  box-shadow: 0 0 10px rgba(201, 120, 100, 0.18);
 }
+
+
+/* =========================
+   SEND BUTTON
+========================= */
 
 .contact-form button {
   padding: 14px;
@@ -84,9 +125,9 @@
 
   border-radius: 10px;
 
-  background: var(--gold);
+  background: var(--primary-blue);
 
-  color: #ffffff;
+  color: #FFF7E8;
 
   cursor: pointer;
 
@@ -96,9 +137,21 @@
 }
 
 .contact-form button:hover {
-  background: linear-gradient(100deg, var(--primary-blue), #ffd43b);
+  background: linear-gradient(
+    100deg,
+    #B85C5C,
+    #E8A58F
+  );
+
   transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px var(--shadow);
 }
+
+
+/* =========================
+   CONTACT GRID
+========================= */
 
 .contact-grid {
   flex: 1;
@@ -109,6 +162,11 @@
 
   gap: 20px;
 }
+
+
+/* =========================
+   CONTACT CARD
+========================= */
 
 .contact-card {
   background: var(--card-bg);
@@ -132,38 +190,86 @@
   min-height: 170px;
 }
 
+
+/* Contact Icon */
+
 .contact-card svg {
   font-size: 28px;
+
   margin-bottom: 10px;
+
+  color: var(--primary-blue);
+
+  transition: color 0.3s ease;
 }
+
+
+/* Contact Heading */
 
 .contact-card h3 {
   margin-bottom: 8px;
+
   color: var(--text-color);
+
+  transition: color 0.3s ease;
 }
+
+
+/* Contact Text */
 
 .contact-card p {
   font-size: 14px;
+
   color: var(--secondary-text);
+
   line-height: 1.5;
+
   word-break: break-word;
+
+  transition: color 0.3s ease;
 }
+
+
+/* =========================
+   CONTACT CARD HOVER
+========================= */
 
 .contact-card:hover {
   transform: translateY(-5px);
-  background: linear-gradient(10deg, #306998, #ffd43b);
-  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #B85C5C,
+    #C97864,
+    #E8A58F
+  );
+
+  color: #FFF7E8;
+
+  border-color: #C97864;
+
+  box-shadow: 0 12px 30px var(--shadow);
 }
 
 .contact-card:hover h3,
 .contact-card:hover p,
 .contact-card:hover svg {
-  color: #ffffff;
+  color: #FFF7E8;
 }
+
+
+/* =========================
+   WHATSAPP
+========================= */
 
 .whatsapp {
   color: #25D366;
 }
+
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 768px) {
 
@@ -173,22 +279,27 @@
 
   .contact-title {
     font-size: 28px;
+
     line-height: 1.3;
   }
 
   .contact-subtitle {
     font-size: 14px;
+
     margin-bottom: 30px;
+
     padding: 0 5px;
   }
 
   .contact-wrapper {
     flex-direction: column;
+
     gap: 25px;
   }
 
   .contact-form {
     width: 100%;
+
     height: auto;
 
     padding: 25px 20px;
@@ -199,24 +310,31 @@
   .contact-form input,
   .contact-form textarea {
     font-size: 14px;
+
     padding: 12px;
   }
 
   .contact-form button {
     width: 100%;
+
     font-size: 15px;
+
     padding: 13px;
   }
 
   .contact-grid {
     width: 100%;
+
     grid-template-columns: 1fr;
+
     gap: 15px;
   }
 
   .contact-card {
     width: 100%;
+
     min-height: 140px;
+
     padding: 20px;
   }
 
@@ -234,6 +352,11 @@
 
 }
 
+
+/* =========================
+   TABLET
+========================= */
+
 @media (min-width: 769px) and (max-width: 1024px) {
 
   .contact-container {
@@ -250,11 +373,13 @@
 
   .contact-wrapper {
     flex-direction: column;
+
     gap: 30px;
   }
 
   .contact-form {
     width: 100%;
+
     height: auto;
 
     padding: 35px;

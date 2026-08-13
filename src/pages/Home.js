@@ -16,7 +16,7 @@ function Home() {
       >
         <img
           src="/profile.jpg"
-          alt="profile"
+          alt="Sowbharani Ganesan"
           className="profile-img"
         />
       </motion.div>
@@ -30,23 +30,23 @@ function Home() {
 
         <h3 className="hi">Hi, I'm 👋</h3>
 
-        <h1 className="name">SURENDAR D</h1>
+        <h1 className="name">Sowbharani Ganesan</h1>
 
         <TypeAnimation
           sequence={[
-            "🐍 Python Full Stack Developer",
+            "🤖 AI/ML Engineer",
             2000,
 
-            "⚡ Django Developer",
+            "🧠 Machine Learning Engineer",
             2000,
 
-            "⚛️ React Developer",
+            "📊 Data Science Professional",
             2000,
 
-            "🔗 REST API Developer",
+            "🐍 Python Developer",
             2000,
 
-            "💻 Backend Developer",
+            "💡 AI & ML Developer",
             2000,
           ]}
           wrapper="h2"
@@ -56,9 +56,10 @@ function Home() {
         />
 
         <p className="home-description">
-          Passionate about building scalable web applications,
-          REST APIs, and modern user experiences using
-          Python, Django, React, and SQL.
+          B.E. Electronics and Communication Engineering graduate
+          specializing in Data Science and AI. Skilled in Python,
+          SQL, Machine Learning, Data Analysis, and AI, with a passion
+          for building practical and intelligent solutions.
         </p>
 
         <div className="home-buttons">

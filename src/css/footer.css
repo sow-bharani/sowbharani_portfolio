@@ -1,50 +1,99 @@
 .footer {
   background: var(--footer-bg);
+
   color: var(--text-color);
+
   padding-top: 40px;
+
   margin-top: 50px;
+
   border-top: 1px solid var(--border-color);
 }
 
+
+/* =========================
+   FOOTER CONTAINER
+========================= */
+
 .footer-container {
   display: flex;
+
   justify-content: space-between;
+
   padding: 0 60px;
+
   flex-wrap: wrap;
+
   gap: 20px;
 }
+
+
+/* =========================
+   FOOTER SECTIONS
+========================= */
 
 .footer-about,
 .footer-links,
 .footer-social {
   flex: 1;
+
   margin: 10px;
 }
+
+
+/* =========================
+   HEADINGS
+========================= */
 
 .footer h2,
 .footer h3 {
   margin-bottom: 15px;
-  color: var(--text-color);
+
+  color: var(--gold);
+
+  transition: color 0.3s ease;
 }
+
+
+/* =========================
+   TEXT
+========================= */
 
 .footer p {
   font-size: 14px;
+
   line-height: 1.6;
+
   color: var(--secondary-text);
 }
 
+
+/* =========================
+   LINKS
+========================= */
+
 .footer a {
   text-decoration: none;
+
   color: var(--secondary-text);
+
   transition: all 0.3s ease;
 }
 
 .footer a:hover {
-  color: var(--text-color);
+  color: var(--gold);
+
+  transform: translateX(3px);
 }
+
+
+/* =========================
+   FOOTER LINKS
+========================= */
 
 .footer-links ul {
   list-style: none;
+
   padding: 0;
 }
 
@@ -52,13 +101,22 @@
   margin-bottom: 8px;
 }
 
+
+/* =========================
+   SOCIAL ITEMS
+========================= */
+
 .social-item {
   display: flex;
+
   align-items: center;
+
   gap: 8px;
+
   margin-bottom: 10px;
 
   color: var(--secondary-text);
+
   text-decoration: none;
 
   transition: all 0.3s ease;
@@ -68,27 +126,43 @@
 
 .social-item svg {
   font-size: 18px;
+
+  color: var(--gold);
+
+  transition: color 0.3s ease;
 }
 
 .social-item:hover {
-  color: var(--text-color);
+  color: var(--gold);
+
   transform: translateY(-2px) scale(1.05);
 }
+
+
+/* =========================
+   SOCIAL BRAND COLORS
+========================= */
 
 .linkedin:hover {
   color: #0077B5;
 }
 
 .email:hover {
-  color: #FF0000;
+  color: #EA4335;
 }
 
 .whatsapp:hover {
   color: #25D366;
 }
 
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
 .footer-bottom {
   text-align: center;
+
   padding: 15px;
 
   border-top: 1px solid var(--border-color);
@@ -100,13 +174,22 @@
   color: var(--secondary-text);
 }
 
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 768px) {
 
   .footer-container {
     flex-direction: column;
+
     align-items: center;
+
     text-align: center;
+
     padding: 0 20px;
+
     gap: 15px;
   }
 
@@ -114,12 +197,15 @@
   .footer-links,
   .footer-social {
     width: 100%;
+
     margin: 10px 0;
   }
 
   .footer-links ul {
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
   }
 
@@ -129,21 +215,30 @@
 
   .footer-social {
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
   }
 
   .social-item {
     justify-content: center;
+
     width: 100%;
   }
 
 }
 
+
+/* =========================
+   TABLET
+========================= */
+
 @media (min-width: 769px) and (max-width: 1024px) {
 
   .footer-container {
     padding: 0 30px;
+
     gap: 20px;
   }
 

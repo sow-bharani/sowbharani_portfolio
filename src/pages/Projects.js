@@ -6,24 +6,22 @@ function Projects() {
 
   const projects = [
     {
-      title: "Food Ordering System",
-      description: "React + Django online food ordering application",
-      github: "https://github.com/SURENDAR-DHARMALINGAM/smartbite"
+      title: "Gold Rate Prediction",
+      description:
+        "Machine learning project that predicts gold prices using historical data and data analysis techniques.",
+      github: "https://github.com/sow-bharani"
     },
     {
-      title: "Online Examination System",
-      description: "Python Tkinter based online examination platform",
-      github: "https://github.com/SURENDAR-DHARMALINGAM/online_exam_system"
+      title: "Image Classification",
+      description:
+        "Computer vision project for classifying images using Python and image processing techniques.",
+      github: "https://github.com/sow-bharani"
     },
     {
-      title: "2d Chess Game",
-      description: "Chess game developed using Python pygame package",
-      github: "https://github.com/SURENDAR-DHARMALINGAM/2d_chess_game"
-    },
-    {
-      title: "Portfolio",
-      description: "Fully responsive portfolio developed using React.js",
-      github: "https://github.com/SURENDAR-DHARMALINGAM/portfolio"
+      title: "Resume Screening",
+      description:
+        "AI-powered project that analyzes resumes and helps identify relevant candidates based on job requirements.",
+      github: "https://github.com/sow-bharani"
     },
   ];
 
@@ -67,4 +65,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Projects;  
